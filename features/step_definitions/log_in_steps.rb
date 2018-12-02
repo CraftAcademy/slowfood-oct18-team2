@@ -15,4 +15,4 @@ When("I have logged in") do
         And I fill in "Password" with 'maga2020'
         And I click 'Log in'
     }
-  end
+end

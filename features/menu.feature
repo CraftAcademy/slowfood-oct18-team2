@@ -27,14 +27,14 @@ Feature: User can see menu
         And I visit the site
 
     Scenario: When I enter the site I should see a menu
-        Then I see 'green salad'
-        And I see 'fresh lettuce, tomato and cheese'
-        And I see '50'
-        And I see 'Starter'
+        Then I should see 'green salad'
+        And I should see 'fresh lettuce, tomato and cheese'
+        And I should see '50'
+        And I should see 'Starter'
     
     Scenario: User can navigate the products
         When I have logged in
-        Then I see "Today's Menu"
-        And I see "Starter"
-        And I see "Main"
-        And I see "Dessert"
+        Then I should see "Today's Menu"
+        And I should see "Starter"
+        And I should see "Main"
+        And I should see "Dessert"

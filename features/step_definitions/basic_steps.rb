@@ -5,14 +5,14 @@ end
 Given('the following products exists') do |table|
     table.hashes.each do |product|
         category = Category.find_by(category: product[:category])
-        product.except!('category_id')
-        FactoryBot.create(:product, product.merge(category: category))
+        product.except!('category')
+        Product.create(product.merge(category: category))
     end
 end
 
-Given("the following categories exist") do |table|
+Given('the following categories exist') do |table|
     table.hashes.each do |category|
-      Category.create!(category)
+        Category.create!(category)
     end
 end
 
@@ -28,3 +28,6 @@ Given('I click {string}') do |element|
     click_on element
 end
 
+And('stop') do
+    binding.pry
+end

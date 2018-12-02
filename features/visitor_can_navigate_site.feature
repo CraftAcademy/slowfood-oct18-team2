@@ -4,9 +4,9 @@ Feature: User can navigate the site
     I would like to use a navbar
 
     Background:
-       Given the following user exists
-       | email          | password  | password_confirmation |
-       | Don@trump.com  | maga2020  | maga2020              |
+        Given the following user exists
+        | email          | password  | password_confirmation |
+        | Don@trump.com  | maga2020  | maga2020              |
 
     Scenario: User can see navbar
         Given I visit the site
